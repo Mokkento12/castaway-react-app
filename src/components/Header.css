@@ -6,31 +6,27 @@
   margin-bottom: 46px;
 }
 
-.header-list {
+.nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.header-item {
-  list-style: none;
+.nav-link {
   color: #FFF;
   font-size: 17px;
   font-style: normal;
   font-weight: 400;
   line-height: 27px;
+  text-decoration: none;
+  margin-right: 40px;
   cursor: pointer;
 }
 
-.header-item:not(:last-child) {
-  margin-right: 40px;
-}
-
-.header-item.active {
+.nav-link.active {
   color: #118DA8;
 }
 
-.hero-block {
-  display: flex;
-  margin: 100px auto 0;
+.nav-link:last-child {
+  margin-right: 0;
 }
