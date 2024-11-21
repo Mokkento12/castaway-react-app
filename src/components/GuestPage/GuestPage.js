@@ -21,9 +21,10 @@ const GuestPage = () => {
           learned along the way.
         </p>
       </div>
-      <div className="guest-photo">
-        <img src={guestImg} alt="guest" className="guest-img"></img>
-      </div>
+      <div
+        className="guest-photo"
+        style={{ backgroundImage: `url(${guestImg})` }}
+      ></div>
     </div>
   );
 };

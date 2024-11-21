@@ -54,17 +54,7 @@
 .guest-photo {
   width: 650px;
   height: 743px;
-  background: url(~../../assets/img/guest-img.jpg) no-repeat;
+  background: url("../../assets/img/guest-img.jpg") no-repeat;
   background-size: contain;
   border-radius: 12px;
-}
-
-.form-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 387px;
-  border-radius: 32px;
-  background: #000;
-  padding: 60px;
 }
