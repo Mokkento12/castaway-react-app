@@ -1,0 +1,98 @@
+.episodes {
+  padding: 100px 50px 160px;
+}
+
+.header-ep {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.ep-title {
+  color: #FFF;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 79.2px;
+  letter-spacing: 2.88px;
+  margin-bottom: 26px;
+}
+
+.button {
+  min-width: 178px;
+  height: 51px;
+  display: inline-block;
+  border-radius: 6px;
+  background: #118DA8;
+  color: #fff;
+  text-decoration: none;
+  color: #FFF;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  padding: 12px 20px;
+}
+
+.card-container {
+  display: flex;
+  border-radius: 32px;
+  background: #000;
+  margin-bottom: 60px;
+}
+
+.card-image-block,
+.card-text-block {
+  padding: 40px;
+}
+
+.card-text-block {
+  max-width: 778px;
+  min-height: 465px;
+}
+
+.card-image {
+  width: 389px;
+  height: 465px;
+}
+
+.ep-label {
+  display: inline-block;
+  min-width: 73px;
+  height: 27px;
+  border-radius: 6px;
+  background: #191919;
+  color: #fff;
+  padding: 5px 16px;
+  margin-bottom: 48px;
+}
+
+.card-title {
+  color: #118DA8;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  margin-bottom: 18px;
+}
+
+.card-title-strong {
+  color: #FFF;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 70.4px;
+  letter-spacing: 2.56px;
+  margin-bottom: 28px;
+}
+
+.card-desc {
+  max-width: 757px;
+  color: rgba(255, 255, 255, 0.70);
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33px;
+  margin-bottom: 18px;
+}
