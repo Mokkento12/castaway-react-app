@@ -1,0 +1,82 @@
+.hero-block {
+  display: flex;
+  margin: 100px auto 0;
+}
+
+.image-container {
+  position: relative;
+  margin-right: 60px;
+  flex: 1;
+}
+
+.image-container::before {
+  content: '';
+  position: absolute;
+  top: -25px;
+  left: -25px;
+  width: 100%;
+  height: 100%;
+  background-image: url(~../../assets/img/angle.png);
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+
+.hero-image {
+  max-width: 650px;
+  border-radius: 12px;
+}
+
+.hero-text-container {
+  margin: auto;
+}
+
+.hero-text {
+  color: #FFF;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 88px;
+  letter-spacing: 3.2px;
+  margin-bottom: 90px;
+}
+
+.hero-link-title {
+  color: #FFF;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+
+.hero-link-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.hero-link {
+  cursor: pointer;
+}
+
+.hero-link:not(:last-child) {
+  margin-right: 17px;
+}
+
+.hero-text span {
+  position: relative;
+}
+
+.hero-text span::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+  width: 163px;
+  height: 11px;
+  background-image: url(~../../assets/img/underlining.png);
+  background-size: contain;
+}
