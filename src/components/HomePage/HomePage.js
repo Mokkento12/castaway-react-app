@@ -4,6 +4,7 @@ import EpisodesPage from "../Episodes/EpisodesPage";
 import GuestPage from "../GuestPage/GuestPage";
 import Form from "../Form/Form";
 import Testimonials from "../Testimonials/Testimonials";
+import Footer from "../Footer/Footer";
 
 const Homepage = () => {
   return (
@@ -13,7 +14,7 @@ const Homepage = () => {
       <GuestPage />
       <Form />
       <Testimonials />
-      {/* Добавьте другие секции */}
+      <Footer />
     </div>
   );
 };
