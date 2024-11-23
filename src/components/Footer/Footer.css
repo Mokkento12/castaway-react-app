@@ -48,6 +48,23 @@
   margin-right: 16px;
 }
 
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.footer-link.active {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.footer-nav {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: left;
+}
+
 .footer-links-row {
   flex-direction: row;
 }

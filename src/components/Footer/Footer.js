@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import logo from "../../assets/img/logo.svg";
 import socialImg1 from "../../assets/img/IMAGE.svg";
 import socialImg2 from "../../assets/img/IMAGE-1.svg";
@@ -12,13 +13,13 @@ import "./Footer.css";
 
 const Footer = () => {
   const socialLinks = [socialImg1, socialImg2, socialImg3];
-  const footerLinks1 = [
+  const footerLinks = [
     { text: "Home", href: "/" },
-    { text: "About", href: "/" },
-    { text: "Episodes", href: "/" },
-    { text: "Contact", href: "/" },
+    { text: "About", href: "/about" },
+    { text: "Episodes", href: "/episodes" },
+    { text: "Contact", href: "/contact" },
   ];
-  const footerLinks2 = [
+  const footerSecondaryLinks = [
     "Style Guide",
     "Instructions",
     "Changelog",
@@ -26,7 +27,6 @@ const Footer = () => {
     "Powered by Webflow",
     "Licenses",
   ];
-
   const heroImages = [heroImg1, heroImg2, heroImg3, heroImg4, heroImg5];
 
   return (
@@ -47,19 +47,17 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-column">
-          <ul className="footer-links-column">
-            {footerLinks1.map((link, index) => (
-              <li key={index} className="footer-list-item">
-                <a href={link.href} className="footer-link">
-                  {link.text}
-                </a>
-              </li>
+          <nav className="footer-nav">
+            {footerLinks.map((link, index) => (
+              <Link to={link.href} key={index} className="footer-link">
+                {link.text}
+              </Link>
             ))}
-          </ul>
+          </nav>
         </div>
         <div className="footer-column">
           <ul className="footer-links-column">
-            {footerLinks2.map((text, index) => (
+            {footerSecondaryLinks.map((text, index) => (
               <li key={index} className="footer-list-item">
                 <a href="/" className="footer-link">
                   {text}
