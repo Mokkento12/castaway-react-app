@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom"; // Используем NavLink вместо обычного <a>
 import logo from "../../assets/img/logo.svg";
 
 import "./Header.css";
@@ -13,19 +14,19 @@ const Header = () => {
 
   return (
     <header className="header">
-      <a href="/" className="logo">
+      <NavLink to="/" className="logo">
         <img src={logo} alt="Castaway" className="logo-img" />
-      </a>
+      </NavLink>
 
       <nav className="nav">
         {navItems.map((item, index) => (
-          <a
+          <NavLink
             key={index}
-            href={item.link}
-            className={`nav-link ${item.name === "Home" ? "active" : ""}`}
+            to={item.link}
+            className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`} // Добавляем класс "active" при совпадении пути
           >
             {item.name}
-          </a>
+          </NavLink>
         ))}
       </nav>
     </header>
